@@ -3,17 +3,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
-import { ContactoComponent } from './contacto/contacto.component';
+import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppMaterialModule } from './app-material/app-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { WeAreComponent } from './we-are/we-are.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactoComponent
+    ContactComponent,
+    WeAreComponent
   ],
   imports: [
     BrowserModule,

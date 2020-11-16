@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactoComponent } from './contacto/contacto.component';
+import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './shared/home/home.component';
+import { WeAreComponent } from './we-are/we-are.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'contacto', component: ContactoComponent },
+  { path: 'contacto', component: ContactComponent },
+  { path: 'quienes-somos', component: WeAreComponent },
 ];
 
 @NgModule({
