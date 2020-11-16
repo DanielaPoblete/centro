@@ -1,0 +1,12 @@
+.container {
+  background: #e3d0e9;
+  float: right;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    margin: 10px 10px 10px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,25 @@
+//@supports (-webkit-overflow-scrolling: touch) {
+//  /* CSS specific to iOS devices */
+//  body {
+//    height: 100%;
+//    margin: 0;
+//    overflow: hidden;
+//  }
+//  html {
+//    height: 100%;
+//    overflow: hidden;
+//  }
+//}
+//
+//@supports not (-webkit-overflow-scrolling: touch) {
+//  /* CSS for other than iOS devices */
+//  body {
+//    margin: 0;
+//    overflow: hidden;
+//  }
+//}
+
+body {
+  margin: 0;
+  padding: 0;
+}
