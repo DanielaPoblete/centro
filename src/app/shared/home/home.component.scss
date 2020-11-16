@@ -1,7 +1,10 @@
 .container {
+  height: calc(100vh - 65px);
+  width: 100%;
+
   img {
     width: 100%;
     opacity: 0.3;
-    height: calc(100vh - 65px);
+    object-fit: cover
   }
 }
