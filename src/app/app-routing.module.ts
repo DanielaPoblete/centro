@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactoComponent } from './contacto/contacto.component';
+import { HomeComponent } from './shared/home/home.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '', pathMatch: 'full' },
-  { path: 'contcto', redirectTo: 'contacto', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
+  { path: 'contacto', component: ContactoComponent },
 ];
 
 @NgModule({
