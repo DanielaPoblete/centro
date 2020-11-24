@@ -4,12 +4,14 @@ import { HeaderComponent } from './header/header.component';
 import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
     LandingComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { LandingComponent } from './landing/landing.component';
   ],
   exports: [
     HeaderComponent,
-    LandingComponent
+    LandingComponent,
+    FooterComponent
   ]
 })
 export class SharedModule {

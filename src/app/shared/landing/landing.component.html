@@ -1,5 +1,8 @@
 <app-header></app-header>
 <div class="container">
-  <img src="../../assets/img/home-img.png" class="container" alt="" [class.home]="currentRouter == '/home'">
+  <img src="../../assets/img/home-img.jpg" class="container" alt="" [class.home]="currentRouter == '/home'" *ngIf="currentRouter == '/home'">
+  <img src="../../assets/img/contact-img.jpg" class="container" alt="" *ngIf="currentRouter == '/contacto'">
+  <img src="../../assets/img/we-are-img.jpg" class="container" alt="" *ngIf="currentRouter == '/quienes-somos'">
 </div>
+<app-footer></app-footer>
 
