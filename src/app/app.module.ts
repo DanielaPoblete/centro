@@ -10,14 +10,16 @@ import { AppMaterialModule } from './app-material/app-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WeAreComponent } from './we-are/we-are.component';
 import { HomeComponent } from './home/home.component';
-
+import { MapComponent } from './map/map.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     ContactComponent,
     WeAreComponent,
-    HomeComponent
+    MapComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,9 +30,18 @@ import { HomeComponent } from './home/home.component';
     ReactiveFormsModule,
     AppMaterialModule,
     BrowserAnimationsModule,
+    BrowserModule,
+    AgmCoreModule.forRoot({
+      // please get your own API key here:
+      // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
+      apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw'
+    })
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+    MapComponent
+  ]
 })
 export class AppModule {
 }
