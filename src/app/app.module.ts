@@ -9,13 +9,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppMaterialModule } from './app-material/app-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WeAreComponent } from './we-are/we-are.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
-    WeAreComponent
+    WeAreComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

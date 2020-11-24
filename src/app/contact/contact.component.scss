@@ -1,17 +1,15 @@
 .container {
+  mat-card {
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    width: calc(50% - 40px);
+    right: 0;
+    margin: 0 20px;
+  }
 }
 
 .form {
-  background: white;
-  border-radius: 10px;
-  left: 0;
-  margin: auto;
-  max-width: 500px;
-  min-width: 150px;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 200px
 }
 
 .input-full-width {

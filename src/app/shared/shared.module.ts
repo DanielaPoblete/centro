@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { LandingComponent } from './landing/landing.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    HomeComponent,
+    LandingComponent,
   ],
   imports: [
     CommonModule,
@@ -18,7 +18,7 @@ import { HomeComponent } from './home/home.component';
   ],
   exports: [
     HeaderComponent,
-    HomeComponent
+    LandingComponent
   ]
 })
 export class SharedModule {
